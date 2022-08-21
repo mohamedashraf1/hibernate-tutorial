@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+D:\Courses\[FreeCourseSite.com] Udemy - Spring & Hibernate for Beginners (includes Spring Boot)\Projects\hibernate-tutorial\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1307774990.index
+525386075.index
+1412565256.index
+566358011.index
