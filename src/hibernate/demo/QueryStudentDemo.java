@@ -37,7 +37,23 @@ public class QueryStudentDemo {
 									.getResultList();
 			
 			// display the students
-			System.out.println("Students who have last name of ashraf");
+			System.out.println("\n\nStudents who have last name of ashraf");
+			displayStudents(theStudents);
+			
+			// query students: lastName="diab" 	OR firstName="karim"
+			theStudents = 
+					session.createQuery("from Student s where" 
+										+" s.lastName='diab' OR s.firstName = 'karim'")
+					.getResultList();	
+			
+			System.out.println("\n\nquery students: lastName=\"diab\" 	OR firstName=\"karim\"");
+			displayStudents(theStudents);
+			
+			// query students where email LIKE '%gmail.com'
+			theStudents = session.createQuery("from Student s where "+
+									"s.email LIKE '%gmail.com'").getResultList();
+			
+			System.out.println("\n\nquery students where email LIKE '%gmail.com'");
 			displayStudents(theStudents);
 			
 			// commit transaction
